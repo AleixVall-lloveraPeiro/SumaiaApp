@@ -141,8 +141,8 @@ class GlowingStartButton extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: const LinearGradient(
             colors: [
-              Color.fromARGB(255, 12, 255, 12), // Groc
-              Color.fromARGB(255, 11, 106, 2),                // Orange
+              Color.fromARGB(255, 0, 200, 0), // Groc
+              Color.fromARGB(255, 0, 100, 0),                // Orange
             ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,

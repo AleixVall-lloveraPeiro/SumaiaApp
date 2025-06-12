@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
               title: 'Limit App Usage',
               subtitle: 'Block distractions & own your time',
               icon: Icons.timer,
-              color: Colors.deepPurple,
+              color: const Color.fromARGB(255, 0, 200, 0),
               onTap: () {
                 Navigator.push(
                   context, 
@@ -55,7 +55,7 @@ class HomeScreen extends StatelessWidget {
               title: 'Full Phone Lock',
               subtitle: 'Go all in. No excuses.',
               icon: Icons.lock_outline,
-              color: Colors.orangeAccent,
+              color: const Color.fromARGB(255, 0, 100, 0),
               onTap: () {},
             ),
             const Spacer(),
