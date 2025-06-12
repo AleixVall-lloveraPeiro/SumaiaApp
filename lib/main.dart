@@ -1,5 +1,7 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; 
 import 'package:google_fonts/google_fonts.dart';
+import 'home_screen.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -94,7 +96,7 @@ class BackgroundGradient extends StatelessWidget {
           colors: [
             Color.fromARGB(255, 0, 0, 0),
             Color.fromARGB(255, 19, 19, 19),
-            Color.fromARGB(255, 32, 32, 32)
+            Color.fromARGB(255, 32, 32, 32),
           ],
         ),
       ),
@@ -128,14 +130,19 @@ class GlowingStartButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context, 
+          MaterialPageRoute(builder:(context) => const HomeScreen()),
+        );
+      },
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 18),
         decoration: BoxDecoration(
           gradient: const LinearGradient(
             colors: [
-              Color.fromARGB(255, 233, 225, 0), // Teal
-              Color(0xFFFF6E40), // Orange
+              Color.fromARGB(255, 12, 255, 12), // Groc
+              Color.fromARGB(255, 11, 106, 2),                // Orange
             ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
